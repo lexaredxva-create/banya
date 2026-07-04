@@ -95,12 +95,12 @@
   <text class="tiny" x="128" y="580">площадка печи</text>
   <text class="tiny" x="128" y="602">на 3-4 балки</text>
 
-  <rect class="hatch" x="875" y="410" width="145" height="74"/>
-  <rect class="blocking" x="860" y="395" width="12" height="110"/>
-  <rect class="blocking" x="1025" y="395" width="12" height="110"/>
-  <rect class="blocking" x="860" y="390" width="180" height="10"/>
-  <rect class="blocking" x="860" y="500" width="180" height="10"/>
-  <text class="tiny" x="850" y="375">рамка вокруг люка</text>
+  <rect class="hatch" x="875" y="585" width="145" height="74"/>
+  <rect class="blocking" x="860" y="570" width="12" height="110"/>
+  <rect class="blocking" x="1025" y="570" width="12" height="110"/>
+  <rect class="blocking" x="860" y="565" width="180" height="10"/>
+  <rect class="blocking" x="860" y="675" width="180" height="10"/>
+  <text class="tiny" x="845" y="555">люк у правого ската</text>
 
   <text class="small" x="125" y="465">парная</text>
   <text class="small" x="300" y="465">помывочная</text>

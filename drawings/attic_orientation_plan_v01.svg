@@ -41,9 +41,9 @@
   <rect class="rest" x="522" y="250" width="608" height="480"/>
 
   <!-- hatch: long side along attic length, perpendicular to gable wall -->
-  <rect class="hatch" x="940" y="430" width="145" height="72"/>
-  <rect class="lid" x="940" y="515" width="145" height="45"/>
-  <line class="thin" x1="940" y1="515" x2="1085" y2="560"/>
+  <rect class="hatch" x="940" y="575" width="145" height="72"/>
+  <rect class="lid" x="940" y="660" width="145" height="45"/>
+  <line class="thin" x1="940" y1="660" x2="1085" y2="705"/>
 
   <!-- AC units on left slope side -->
   <rect class="ac" x="720" y="275" width="70" height="48"/>
@@ -61,7 +61,7 @@
 
   <line class="thin" x1="1130" y1="210" x2="1130" y2="735"/>
   <text class="note" x="840" y="220">Сторона входа / люка</text>
-  <text class="small" x="852" y="690">лестница ниже, зона отдыха</text>
+  <text class="small" x="560" y="690">лестница ниже, зона отдыха</text>
 
   <text class="small" x="600" y="490">зона отдыха / проход</text>
   <text class="tiny" x="390" y="478">помывочная</text>
@@ -69,11 +69,11 @@
   <text class="tiny" x="207" y="506">у торца</text>
   <text class="tiny" x="675" y="265">левый скат</text>
   <text class="tiny" x="675" y="348">кондиционеры остаются</text>
-  <text class="tiny" x="895" y="415">люк вдоль чердака</text>
-  <text class="tiny" x="895" y="590">крышка/щит рядом</text>
+  <text class="tiny" x="875" y="560">люк у правого ската</text>
+  <text class="tiny" x="760" y="705">крышка/щит рядом</text>
 
-  <line class="dim" x1="970" y1="465" x2="1070" y2="465"/>
-  <text class="tiny" x="920" y="390">не параллельно торцу</text>
+  <line class="dim" x1="970" y1="610" x2="1070" y2="610"/>
+  <text class="tiny" x="875" y="535">не параллельно торцу</text>
 
   <rect class="reject" x="1195" y="250" width="280" height="165"/>
   <text class="small" x="1215" y="290">Важно</text>
@@ -87,8 +87,8 @@
   <text class="small" x="1195" y="584">помывочная, отдых.</text>
   <text class="small" x="1195" y="622">Фото 3/7: от люка</text>
   <text class="small" x="1195" y="660">к торцу парной.</text>
-  <text class="small" x="1195" y="698">Оставить: люк,</text>
-  <text class="small" x="1195" y="736">кондиционеры.</text>
+  <text class="small" x="1195" y="698">Люк не по центру,</text>
+  <text class="small" x="1195" y="736">а ближе к правому скату.</text>
 
   <rect class="thin" x="1045" y="858" width="455" height="70"/>
   <text class="tiny" x="1060" y="885">Лист: attic_orientation_plan_v01</text>
