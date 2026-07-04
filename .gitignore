@@ -1,0 +1,7 @@
+# Local render/cache noise
+__pycache__/
+*.pyc
+
+# Temporary exports
+tmp/
+*.bak
