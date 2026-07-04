@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#202020"/>
+    </marker>
+    <style>
+      .sheet { fill: #f7f4ec; }
+      .border { fill: none; stroke: #202020; stroke-width: 3; }
+      .outer { fill: #fffdf7; stroke: #202020; stroke-width: 5; }
+      .axis { stroke: #777; stroke-width: 2; stroke-dasharray: 10 8; }
+      .dim { stroke: #202020; stroke-width: 2; marker-end: url(#arrow); marker-start: url(#arrow); }
+      .thin { stroke: #202020; stroke-width: 2; fill: none; }
+      .note { font-family: Arial, sans-serif; fill: #202020; font-size: 30px; }
+      .small { font-family: Arial, sans-serif; fill: #202020; font-size: 24px; }
+      .tiny { font-family: Arial, sans-serif; fill: #202020; font-size: 20px; }
+      .title { font-family: Arial, sans-serif; fill: #202020; font-size: 36px; font-weight: 700; }
+      .steam { fill: #f4d5cf; stroke: #8d312a; stroke-width: 4; }
+      .wash { fill: #d8edf3; stroke: #236b7a; stroke-width: 3; }
+      .rest { fill: #e5f0dc; stroke: #4d6b34; stroke-width: 3; }
+      .hatch { fill: #d5c0a4; stroke: #6d4c2e; stroke-width: 4; }
+      .lid { fill: #c99353; stroke: #6d4c2e; stroke-width: 3; }
+      .ac { fill: #d8dde1; stroke: #4d5962; stroke-width: 3; }
+      .reject { fill: #fff1f0; stroke: #b42318; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect class="sheet" x="0" y="0" width="1600" height="1000"/>
+  <rect class="border" x="40" y="40" width="1520" height="920"/>
+
+  <text class="title" x="80" y="95">Ориентация чердака. Вид сверху</text>
+  <text class="small" x="80" y="132">Статус: схема для обсуждения. Размеры ориентировочные, в мм.</text>
+
+  <!-- Attic footprint: 12 m x 6 m -->
+  <rect class="outer" x="170" y="250" width="960" height="480"/>
+  <line class="axis" x1="650" y1="250" x2="650" y2="730"/>
+  <line class="axis" x1="170" y1="490" x2="1130" y2="490"/>
+
+  <!-- zones -->
+  <rect class="steam" x="170" y="250" width="192" height="480"/>
+  <rect class="wash" x="362" y="250" width="160" height="480"/>
+  <rect class="rest" x="522" y="250" width="608" height="480"/>
+
+  <!-- hatch: long side along attic length, perpendicular to gable wall -->
+  <rect class="hatch" x="940" y="430" width="145" height="72"/>
+  <rect class="lid" x="940" y="515" width="145" height="45"/>
+  <line class="thin" x1="940" y1="515" x2="1085" y2="560"/>
+
+  <!-- AC units on left slope side -->
+  <rect class="ac" x="720" y="275" width="70" height="48"/>
+  <rect class="ac" x="805" y="275" width="70" height="48"/>
+
+  <!-- direction arrows and dimensions -->
+  <line class="dim" x1="170" y1="790" x2="1130" y2="790"/>
+  <text class="small" x="580" y="830">12 000</text>
+  <line class="dim" x1="120" y1="250" x2="120" y2="730"/>
+  <text class="small" x="58" y="500" transform="rotate(-90 58 500)">6 000</text>
+
+  <line class="thin" x1="170" y1="210" x2="170" y2="735"/>
+  <text class="note" x="180" y="220">Торец будущей парной</text>
+  <text class="small" x="185" y="690">газобетонная стена</text>
+
+  <line class="thin" x1="1130" y1="210" x2="1130" y2="735"/>
+  <text class="note" x="840" y="220">Сторона входа / люка</text>
+  <text class="small" x="852" y="690">лестница ниже, зона отдыха</text>
+
+  <text class="small" x="600" y="490">зона отдыха / проход</text>
+  <text class="tiny" x="390" y="478">помывочная</text>
+  <text class="tiny" x="210" y="478">парная</text>
+  <text class="tiny" x="207" y="506">у торца</text>
+  <text class="tiny" x="675" y="265">левый скат</text>
+  <text class="tiny" x="675" y="348">кондиционеры остаются</text>
+  <text class="tiny" x="895" y="415">люк вдоль чердака</text>
+  <text class="tiny" x="895" y="590">крышка/щит рядом</text>
+
+  <line class="dim" x1="970" y1="465" x2="1070" y2="465"/>
+  <text class="tiny" x="920" y="390">не параллельно торцу</text>
+
+  <rect class="reject" x="1195" y="250" width="280" height="165"/>
+  <text class="small" x="1215" y="290">Важно</text>
+  <text class="tiny" x="1215" y="325">Предыдущий рендер с люком</text>
+  <text class="tiny" x="1215" y="353">как поперечным прямоугольником</text>
+  <text class="tiny" x="1215" y="381">считать неверным.</text>
+
+  <text class="small" x="1195" y="470">Ось X: длина чердака 12 м.</text>
+  <text class="small" x="1195" y="508">Ось Y: ширина чердака 6 м.</text>
+  <text class="small" x="1195" y="546">От торца: парная,</text>
+  <text class="small" x="1195" y="584">помывочная, отдых.</text>
+  <text class="small" x="1195" y="622">Фото 3/7: от люка</text>
+  <text class="small" x="1195" y="660">к торцу парной.</text>
+  <text class="small" x="1195" y="698">Оставить: люк,</text>
+  <text class="small" x="1195" y="736">кондиционеры.</text>
+
+  <rect class="thin" x="1045" y="858" width="455" height="70"/>
+  <text class="tiny" x="1060" y="885">Лист: attic_orientation_plan_v01</text>
+  <text class="tiny" x="1060" y="913">Масштаб условный. Единицы: мм. Дата: 2026-07-04</text>
+</svg>
