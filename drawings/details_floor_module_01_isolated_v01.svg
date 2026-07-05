@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#202020"/>
+    </marker>
+    <pattern id="wood" patternUnits="userSpaceOnUse" width="24" height="18">
+      <rect width="24" height="18" fill="#c88f4d"/>
+      <path d="M0 9 H24" stroke="#8c5b2b" stroke-width="1"/>
+      <path d="M3 3 C9 8, 15 1, 22 7" fill="none" stroke="#9d6933" stroke-width="1"/>
+    </pattern>
+    <pattern id="osb" patternUnits="userSpaceOnUse" width="32" height="24">
+      <rect width="32" height="24" fill="#e2b66f"/>
+      <path d="M3 5 L15 2 M18 10 L30 6 M6 18 L24 21 M12 13 L20 17" stroke="#b88542" stroke-width="2"/>
+    </pattern>
+    <style>
+      .sheet { fill: #f7f4ec; }
+      .border { fill: none; stroke: #202020; stroke-width: 3; }
+      .title { font-family: Arial, sans-serif; font-size: 34px; font-weight: 700; fill: #202020; }
+      .h2 { font-family: Arial, sans-serif; font-size: 26px; font-weight: 700; fill: #202020; }
+      .txt { font-family: Arial, sans-serif; font-size: 22px; fill: #202020; }
+      .small { font-family: Arial, sans-serif; font-size: 18px; fill: #202020; }
+      .tiny { font-family: Arial, sans-serif; font-size: 16px; fill: #202020; }
+      .panel { fill: #fffdf7; stroke: #202020; stroke-width: 2; }
+      .beam { fill: url(#wood); stroke: #6f421c; stroke-width: 2; }
+      .block { fill: #b97535; stroke: #6f421c; stroke-width: 2; }
+      .deck { fill: url(#osb); stroke: #8c5b2b; stroke-width: 2; }
+      .wet { fill: #8bd3df; stroke: #236b7a; stroke-width: 2; }
+      .water { fill: #2e98b2; stroke: #236b7a; stroke-width: 2; }
+      .finish { fill: #dfe8c9; stroke: #5f7a3d; stroke-width: 2; }
+      .cement { fill: #d6d1c8; stroke: #6d6256; stroke-width: 2; }
+      .fire { fill: #efe2d2; stroke: #8d4d22; stroke-width: 3; }
+      .dim { stroke: #202020; stroke-width: 2; marker-end: url(#arrow); marker-start: url(#arrow); fill: none; }
+      .lead { stroke: #202020; stroke-width: 2; fill: none; }
+      .dash { stroke: #236b7a; stroke-width: 3; stroke-dasharray: 10 8; fill: none; }
+      .warn { fill: #fff1f0; stroke: #b42318; stroke-width: 3; }
+      .good { fill: #eef7e8; stroke: #5f7a3d; stroke-width: 2; }
+      .label { fill: #fffdf7; stroke: #202020; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect class="sheet" width="1800" height="1200"/>
+  <rect class="border" x="40" y="40" width="1720" height="1120"/>
+  <text class="title" x="80" y="95">Карточка узла 01. Пол банного блока отдельно от чердака</text>
+  <text class="txt" x="80" y="128">Статус: схема для обсуждения. Не расчет. Цель: понять конструктив без перспективы чердака.</text>
+
+  <!-- Panel A -->
+  <rect class="panel" x="80" y="170" width="820" height="560"/>
+  <text class="h2" x="110" y="215">A. Несущая решетка пола</text>
+  <text class="small" x="110" y="252">Фрагмент зоны парная + помывочная, вид сверху</text>
+
+  <!-- joist module top view -->
+  <rect class="beam" x="150" y="320" width="52" height="310"/>
+  <rect class="beam" x="435" y="320" width="52" height="310"/>
+  <rect class="beam" x="720" y="320" width="52" height="310"/>
+
+  <rect class="block" x="202" y="350" width="233" height="28"/>
+  <rect class="block" x="487" y="350" width="233" height="28"/>
+  <rect class="block" x="202" y="455" width="233" height="28"/>
+  <rect class="block" x="487" y="455" width="233" height="28"/>
+  <rect class="block" x="202" y="560" width="233" height="28"/>
+  <rect class="block" x="487" y="560" width="233" height="28"/>
+
+  <rect class="dash" x="235" y="335" width="445" height="270"/>
+  <text class="small" x="255" y="325">зона усиления под банный блок</text>
+
+  <rect class="label" x="128" y="642" width="210" height="48"/>
+  <text class="tiny" x="142" y="672">балка 100 x 200 на ребре</text>
+  <rect class="label" x="390" y="642" width="238" height="48"/>
+  <text class="tiny" x="405" y="672">перемычки между балками</text>
+
+  <line class="dim" x1="202" y1="292" x2="435" y2="292"/>
+  <text class="small" x="292" y="283">450 прогал</text>
+  <line class="dim" x1="150" y1="292" x2="202" y2="292"/>
+  <text class="small" x="160" y="283">100</text>
+
+  <!-- Panel B dry section -->
+  <rect class="panel" x="950" y="170" width="760" height="270"/>
+  <text class="h2" x="980" y="215">B. Сухая зона: базовый пирог</text>
+  <rect class="beam" x="1015" y="340" width="610" height="52"/>
+  <rect class="deck" x="1015" y="302" width="610" height="38"/>
+  <rect class="deck" x="1015" y="264" width="610" height="38"/>
+  <rect class="finish" x="1015" y="238" width="610" height="26"/>
+  <text class="small" x="1040" y="257">чистовой настил/покрытие по зоне отдыха</text>
+  <text class="small" x="1040" y="292">2-й слой листового настила, швы вразбежку</text>
+  <text class="small" x="1040" y="329">1-й слой силового настила</text>
+  <text class="small" x="1040" y="375">балки 100 x 200</text>
+
+  <!-- Panel C wet section -->
+  <rect class="panel" x="950" y="470" width="760" height="300"/>
+  <text class="h2" x="980" y="515">C. Помывочная: легкий мокрый пирог</text>
+  <rect class="beam" x="1015" y="670" width="610" height="52"/>
+  <rect class="deck" x="1015" y="632" width="610" height="38"/>
+  <rect class="deck" x="1015" y="594" width="610" height="38"/>
+  <rect class="water" x="1015" y="578" width="610" height="16"/>
+  <rect class="wet" x="1015" y="548" width="610" height="30"/>
+  <text class="small" x="1040" y="568">легкий поддон/панель с уклоном</text>
+  <text class="small" x="1040" y="590">гидроизоляция, заводить на стены</text>
+  <text class="small" x="1040" y="622">2-й слой листового настила</text>
+  <text class="small" x="1040" y="659">1-й слой силового настила</text>
+  <text class="small" x="1040" y="706">балки + перемычки, без тяжелой стяжки</text>
+
+  <!-- Panel D stove pad -->
+  <rect class="panel" x="80" y="770" width="820" height="310"/>
+  <text class="h2" x="110" y="815">D. Печь: распределяющая площадка</text>
+  <rect class="beam" x="145" y="1002" width="650" height="45"/>
+  <rect class="deck" x="145" y="964" width="650" height="38"/>
+  <rect class="deck" x="145" y="926" width="650" height="38"/>
+  <rect class="fire" x="280" y="877" width="380" height="49"/>
+  <rect class="cement" x="350" y="832" width="240" height="45"/>
+  <text class="small" x="372" y="861">место печи</text>
+  <text class="small" x="310" y="907">негорючая плита по паспорту печи</text>
+  <text class="small" x="185" y="957">2 слоя настила работают как распределяющая площадка</text>
+  <text class="small" x="185" y="1032">опирать на несколько балок, не на одну доску</text>
+  <rect class="label" x="610" y="832" width="230" height="48"/>
+  <text class="tiny" x="625" y="852">размер и отступы</text>
+  <text class="tiny" x="625" y="872">после выбора печи</text>
+
+  <!-- Notes -->
+  <rect class="warn" x="950" y="815" width="760" height="205"/>
+  <text class="h2" x="980" y="858">Что проверить до закупки</text>
+  <text class="small" x="980" y="898">1. Реальное состояние балок: опирание, трещины, гниль, прогиб.</text>
+  <text class="small" x="980" y="932">2. Чем можно крепить перемычки к осине и к существующим балкам.</text>
+  <text class="small" x="980" y="966">3. Массу выбранной печи и пожарные отступы по паспорту.</text>
+  <text class="small" x="980" y="1000">4. Решение слива: где труба 50 мм пройдет вниз без ослабления балок.</text>
+
+  <rect class="good" x="950" y="1040" width="760" height="65"/>
+  <text class="small" x="980" y="1068">Главная идея: сначала жесткая легкая платформа, затем стены.</text>
+  <text class="small" x="980" y="1096">Мокрая зона и печь получают отдельное усиление, но без тяжелой стяжки.</text>
+
+  <rect class="panel" x="1265" y="1118" width="445" height="32"/>
+  <text class="tiny" x="1280" y="1140">Лист: details_floor_module_01_isolated_v01, единицы: мм</text>
+</svg>
