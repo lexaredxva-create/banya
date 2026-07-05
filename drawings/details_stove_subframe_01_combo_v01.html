@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Узел 02. Подрамник под печь</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f7f4ec;
+      color: #202020;
+      font-family: Arial, sans-serif;
+    }
+    .sheet {
+      width: 1800px;
+      height: 1200px;
+      padding: 42px;
+      border: 3px solid #202020;
+      background: #f7f4ec;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 38px;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .panel {
+      background: #fffdf7;
+      border: 2px solid #202020;
+      padding: 18px;
+    }
+    .panel h2 {
+      font-size: 26px;
+      margin: 0 0 14px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .photo {
+      height: 565px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .notes {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 28px;
+      margin-top: 28px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 28px;
+      font-size: 22px;
+      line-height: 1.45;
+    }
+    .warn {
+      background: #fff1f0;
+      border: 2px solid #b42318;
+    }
+    .ok {
+      background: #eef7e8;
+      border: 2px solid #5f7a3d;
+    }
+    .small {
+      font-size: 19px;
+      line-height: 1.35;
+      margin: 0;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>Узел 02. Подрамник под печь: схема + фотореал</h1>
+    <div class="subtitle">Сначала распределяем нагрузку по балкам, затем делаем негорючую защиту по паспорту печи.</div>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>Схема узла</h2>
+        <img src="file:///C:/Users/lexa/Documents/GitHub/banya/drawings/details_stove_subframe_01_v01.png" alt="Схема подрамника под печь">
+      </div>
+      <div class="panel">
+        <h2>Как это должно выглядеть вживую</h2>
+        <img class="photo" src="file:///C:/Users/lexa/Documents/GitHub/banya/renders/photoreal/details_stove_subframe_01_visual_v01.png" alt="Фотореал подрамника под печь">
+      </div>
+    </section>
+
+    <section class="notes">
+      <div class="panel ok">
+        <h2>Что здесь главное</h2>
+        <ul>
+          <li>Подрамник/перемычки связывают 3–4 балки, а не одну доску.</li>
+          <li>Два слоя фанеры/OSB работают как распределяющая платформа.</li>
+          <li>Негорючая плита сверху не заменяет несущий настил.</li>
+          <li>Лист перед дверцей защищает от углей и искр.</li>
+        </ul>
+      </div>
+      <div class="panel warn">
+        <h2>Что нельзя решать без печи</h2>
+        <ul>
+          <li>Точный размер площадки.</li>
+          <li>Отступы до стен и пола.</li>
+          <li>Размер листа перед дверцей.</li>
+          <li>Массу печи с камнями.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>Материалы предварительно: перемычки 50×150/50×200, фанера ФСФ 21 или OSB-3/4 22, негорючая плита/заводское основание, стальной лист.</div>
+      <div>Лист: details_stove_subframe_01_combo_v01</div>
+    </div>
+  </main>
+</body>
+</html>
