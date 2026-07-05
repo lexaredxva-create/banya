@@ -118,8 +118,12 @@
   - `drawings/details_stove_subframe_01_combo_v01.html`
   - `drawings/details_stove_subframe_01_combo_v01.png`
   - `renders/photoreal/details_stove_subframe_01_visual_v01.png`
+  - `drawings/details_stove_subframe_01_combo_v02.html`
+  - `drawings/details_stove_subframe_01_combo_v02.png`
+  - `renders/photoreal/details_stove_subframe_01_visual_v02.png`
   - `planning/sources_stove_subframe_01.md`
   - Смысл узла: несущая часть распределяет вес печи на несколько балок; негорючая площадка сверху решает пожарную защиту и уточняется по паспорту печи.
+  - Рабочая версия для обсуждения: v02, потому что она показывает не уменьшенный чертеж, а крупный фотореал и последовательность сборки по шагам.
 - Этап 0 нужно перерисовать заново:
   - пустой чердак после уборки;
   - оставить реальный люк/проем в полу с поднятой крышкой;

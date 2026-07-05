@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Узел 02 v02. Подрамник под печь</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f6f2e9;
+      color: #202020;
+      font-family: Arial, sans-serif;
+    }
+    .sheet {
+      width: 1800px;
+      height: 1200px;
+      padding: 42px;
+      border: 3px solid #202020;
+      background: #f6f2e9;
+    }
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      line-height: 1.08;
+    }
+    .subtitle {
+      margin: 10px 0 24px;
+      font-size: 22px;
+    }
+    .top {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 28px;
+    }
+    .panel {
+      background: #fffdf7;
+      border: 2px solid #202020;
+      padding: 18px;
+    }
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    .photo {
+      width: 100%;
+      height: 565px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .step {
+      min-height: 132px;
+      border: 2px solid #6c5a44;
+      background: #fcf7ed;
+      padding: 14px;
+      position: relative;
+    }
+    .num {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #202020;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 19px;
+    }
+    .step h3 {
+      margin: 0 42px 8px 0;
+      font-size: 23px;
+    }
+    .step p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .mini {
+      height: 62px;
+      margin-top: 10px;
+      position: relative;
+      border-top: 0;
+    }
+    .wood { background: #c48742; border: 2px solid #6f421c; }
+    .osb { background: #e0b66e; border: 2px solid #8c5b2b; }
+    .fire { background: #eadfcf; border: 2px solid #8d4d22; }
+    .steel { background: #cfd5d9; border: 2px solid #667078; }
+    .beam {
+      position: absolute;
+      bottom: 0;
+      width: 24px;
+      height: 54px;
+      background: #c48742;
+      border: 2px solid #6f421c;
+    }
+    .block {
+      position: absolute;
+      height: 14px;
+      background: #b87435;
+      border: 1px solid #6f421c;
+    }
+    .layer {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      height: 12px;
+      border: 1px solid #6f421c;
+      background: #e0b66e;
+    }
+    .bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 22px;
+      margin-top: 26px;
+    }
+    .ok { background: #eef7e8; border-color: #5f7a3d; }
+    .warn { background: #fff1f0; border-color: #b42318; }
+    ul {
+      margin: 0;
+      padding-left: 24px;
+      font-size: 20px;
+      line-height: 1.38;
+    }
+    .source p {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.32;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 17px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .muted { color: #555; }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>Узел 02 v02. Подрамник под печь: понятная сборка</h1>
+    <div class="subtitle">Разделяем две задачи: деревянный подрамник несёт и распределяет вес, негорючая площадка защищает от жара и углей.</div>
+
+    <section class="top">
+      <div class="panel">
+        <h2>Фотореалистичный вид узла</h2>
+        <img class="photo" src="file:///C:/Users/lexa/Documents/GitHub/banya/renders/photoreal/details_stove_subframe_01_visual_v02.png" alt="Фотореал подрамника под печь v02">
+      </div>
+
+      <div class="panel">
+        <h2>Сборка по шагам</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Балки</h3>
+            <p>Опираемся не на доски пола, а на несколько балок 100×200.</p>
+            <div class="mini">
+              <div class="beam" style="left:8px"></div>
+              <div class="beam" style="left:90px"></div>
+              <div class="beam" style="left:172px"></div>
+              <div class="beam" style="left:254px"></div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Перемычки</h3>
+            <p>Связываем балки, чтобы площадка работала как единый участок.</p>
+            <div class="mini">
+              <div class="beam" style="left:8px"></div>
+              <div class="beam" style="left:90px"></div>
+              <div class="beam" style="left:172px"></div>
+              <div class="beam" style="left:254px"></div>
+              <div class="block" style="left:32px; right:44px; top:14px"></div>
+              <div class="block" style="left:32px; right:44px; top:38px"></div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Два слоя настила</h3>
+            <p>Фанера ФСФ 21 или OSB-3/4 22, швы слоёв вразбежку.</p>
+            <div class="mini">
+              <div class="beam" style="left:8px"></div>
+              <div class="beam" style="left:90px"></div>
+              <div class="beam" style="left:172px"></div>
+              <div class="beam" style="left:254px"></div>
+              <div class="layer" style="bottom:18px"></div>
+              <div class="layer" style="bottom:32px; left:38px; right:0"></div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <h3>Защита печи</h3>
+            <p>Негорючая плита и лист перед дверцей — только по паспорту печи.</p>
+            <div class="mini">
+              <div class="layer" style="bottom:8px"></div>
+              <div class="fire" style="position:absolute; left:80px; right:80px; bottom:23px; height:18px;"></div>
+              <div class="steel" style="position:absolute; left:52px; right:52px; bottom:44px; height:10px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="panel ok">
+        <h2>Предварительные размеры</h2>
+        <ul>
+          <li>Площадка примерно 1200–1400 по ширине.</li>
+          <li>Глубина примерно 900–1100.</li>
+          <li>Захватить 3–4 балки.</li>
+          <li>Точные размеры после выбора печи.</li>
+        </ul>
+      </div>
+      <div class="panel warn">
+        <h2>Не перепутать</h2>
+        <ul>
+          <li>Фанера/OSB несут, но горят.</li>
+          <li>Негорючая плита защищает, но не заменяет настил.</li>
+          <li>Стяжку не используем без расчёта.</li>
+          <li>Кирпичный постамент не закладываем.</li>
+        </ul>
+      </div>
+      <div class="panel source">
+        <h2>Основание решения</h2>
+        <p>Проектные данные: балки 100×200, прогал 450, лёгкая дровяная печь без бака и кирпича.</p>
+        <p>Пожарная часть: МЧС + паспорта производителей. Harvia показывает отдельное защитное основание; Эверест в инструкциях задаёт защиту пола перед дверцей.</p>
+        <p class="muted">Подробно: planning/sources_stove_subframe_01.md</p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>Материалы: перемычки 50×150/50×200 по месту, фанера ФСФ 21 или OSB-3/4 22, негорючая плита/заводское основание, стальной лист.</div>
+      <div>Лист: details_stove_subframe_01_combo_v02</div>
+    </div>
+  </main>
+</body>
+</html>
