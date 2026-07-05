@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Узел 04. Парная-капсула</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f2e9; color: #202020; font-family: Arial, sans-serif; }
+    .sheet { width: 1800px; height: 1200px; padding: 42px; border: 3px solid #202020; background: #f6f2e9; }
+    h1 { margin: 0; font-size: 38px; line-height: 1.08; }
+    .subtitle { margin: 10px 0 24px; font-size: 22px; }
+    .top { display: grid; grid-template-columns: 1.08fr .92fr; gap: 28px; }
+    .panel { background: #fffdf7; border: 2px solid #202020; padding: 18px; }
+    .panel h2 { margin: 0 0 14px; font-size: 26px; line-height: 1.15; }
+    .photo { width: 100%; height: 565px; object-fit: cover; object-position: center; display: block; }
+    .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .step { min-height: 132px; border: 2px solid #6b6760; background: #fbf8ef; padding: 14px; position: relative; }
+    .num { position: absolute; top: 10px; right: 12px; width: 34px; height: 34px; border-radius: 50%; background: #202020; color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 19px; }
+    .step h3 { margin: 0 42px 8px 0; font-size: 23px; }
+    .step p { margin: 0; font-size: 18px; line-height: 1.3; }
+    .mini { height: 62px; margin-top: 10px; position: relative; }
+    .stud { position: absolute; bottom: 8px; width: 18px; height: 48px; background: #c48742; border: 2px solid #6f421c; }
+    .wool { position: absolute; left: 32px; right: 32px; bottom: 12px; height: 40px; background: #d8cfae; border: 2px solid #9a8e69; }
+    .foil { position: absolute; left: 22px; right: 22px; bottom: 24px; height: 8px; background: linear-gradient(90deg,#d4d7d9,#ffffff,#b7bdc2); border: 1px solid #778087; }
+    .batten { position: absolute; bottom: 10px; width: 12px; height: 48px; background: #b97a39; border: 1px solid #6f421c; }
+    .lining { position: absolute; left: 25px; right: 25px; bottom: 14px; height: 34px; background: repeating-linear-gradient(90deg,#d8a85f,#d8a85f 18px,#b9823d 19px,#d8a85f 22px); border: 2px solid #8c5b2b; }
+    .bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin-top: 26px; }
+    .ok { background: #eef7e8; border-color: #5f7a3d; }
+    .warn { background: #fff1f0; border-color: #b42318; }
+    ul { margin: 0; padding-left: 24px; font-size: 20px; line-height: 1.38; }
+    .source p { margin: 0 0 8px; font-size: 18px; line-height: 1.32; }
+    .footer { margin-top: 18px; font-size: 17px; display: flex; justify-content: space-between; }
+    .muted { color: #555; }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>Узел 04. Парная-капсула: утепление, фольга, зазор, вагонка</h1>
+    <div class="subtitle">Задача: не пустить пар в утеплитель и холодную кровлю; весь влажный воздух выводить вентиляцией, а не в чердак.</div>
+
+    <section class="top">
+      <div class="panel">
+        <h2>Фотореалистичный вид узла</h2>
+        <img class="photo" src="file:///C:/Users/lexa/Documents/GitHub/banya/renders/photoreal/details_sauna_capsule_wall_01_visual_v01.png" alt="Фотореал пирога парной">
+      </div>
+
+      <div class="panel">
+        <h2>Сборка по шагам</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Каркас + утеплитель</h3>
+            <p>Утеплитель в каркасе, но кровельный вентзазор не перекрываем.</p>
+            <div class="mini"><div class="stud" style="left:24px"></div><div class="wool"></div><div class="stud" style="right:24px"></div></div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Фольга изнутри</h3>
+            <p>Фольгированный паробарьер ставим со стороны горячей парной.</p>
+            <div class="mini"><div class="wool"></div><div class="foil"></div></div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Проклейка</h3>
+            <p>Швы, углы, кабели, трубы и светильники герметизируем лентой.</p>
+            <div class="mini"><div class="foil" style="bottom:30px"></div><div class="foil" style="bottom:18px; left:88px; right:88px"></div></div>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <h3>Рейка + вагонка</h3>
+            <p>Контррейка дает зазор минимум около 20 мм, потом вагонка.</p>
+            <div class="mini"><div class="foil" style="bottom:8px"></div><div class="batten" style="left:70px"></div><div class="batten" style="right:70px"></div><div class="lining"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="panel ok">
+        <h2>Что делаем</h2>
+        <ul>
+          <li>Непрерывный фольгированный контур.</li>
+          <li>Проклейка всех швов и проходок.</li>
+          <li>Зазор на контррейке перед вагонкой.</li>
+          <li>Отдельная вентиляция парной наружу.</li>
+        </ul>
+      </div>
+      <div class="panel warn">
+        <h2>Риски</h2>
+        <ul>
+          <li>Нельзя выпускать пар в подкровельное пространство.</li>
+          <li>Нельзя оставлять дырки в фольге.</li>
+          <li>Нельзя перекрыть вентиляцию кровли.</li>
+          <li>Проходы света/кабеля требуют герметизации.</li>
+        </ul>
+      </div>
+      <div class="panel source">
+        <h2>Основание решения</h2>
+        <p>Проектные данные: парная как отдельная капсула внутри холодного чердака; кровлю целиком не утепляем.</p>
+        <p>Источники: Sauna-Satu/SPU/Kingspan по алюминиевой стороне внутрь, проклейке швов и зазору минимум около 20 мм перед облицовкой.</p>
+        <p class="muted">Подробно: planning/sources_sauna_capsule_wall_01.md</p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>Материалы: утеплитель, фольгированный паробарьер, алюминиевая лента, контррейка, вагонка для парной.</div>
+      <div>Лист: details_sauna_capsule_wall_01_combo_v01</div>
+    </div>
+  </main>
+</body>
+</html>

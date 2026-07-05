@@ -124,6 +124,25 @@
   - `planning/sources_stove_subframe_01.md`
   - Смысл узла: несущая часть распределяет вес печи на несколько балок; негорючая площадка сверху решает пожарную защиту и уточняется по паспорту печи.
   - Рабочая версия для обсуждения: v02, потому что она показывает не уменьшенный чертеж, а крупный фотореал и последовательность сборки по шагам.
+- Узел 03, помывочная, легкий пол и слив:
+  - `drawings/details_wash_floor_drain_01_combo_v01.html`
+  - `drawings/details_wash_floor_drain_01_combo_v01.png`
+  - `renders/photoreal/details_wash_floor_drain_01_visual_v01.png`
+  - `planning/sources_wash_floor_drain_01.md`
+  - Смысл узла: легкая помывочная без тяжелой стяжки; гидроизоляция как корыто с заходом на стены; слив 50 мм без ослабления балок.
+- Узел 04, парная-капсула, стена/скат:
+  - `drawings/details_sauna_capsule_wall_01_combo_v01.html`
+  - `drawings/details_sauna_capsule_wall_01_combo_v01.png`
+  - `renders/photoreal/details_sauna_capsule_wall_01_visual_v01.png`
+  - `planning/sources_sauna_capsule_wall_01.md`
+  - Смысл узла: утепление и непрерывный фольгированный паробарьер со стороны парной, проклейка швов и проходок, контррейка под вагонку, отдельный вывод влажного воздуха.
+- Узел 05, дымоход через газобетонную стену:
+  - `drawings/details_chimney_wall_pass_01_combo_v01.html`
+  - `drawings/details_chimney_wall_pass_01_combo_v01.png`
+  - `renders/photoreal/details_chimney_wall_pass_01_visual_v01.png`
+  - `planning/sources_chimney_wall_pass_01.md`
+  - Смысл узла: проход стены делать штатным проходным элементом выбранной дымоходной системы; снаружи ставить тройник с ревизией на опору и поднимать вертикальный сэндвич на кронштейнах.
+  - Важно: финальные пожарные расстояния и диаметры нельзя фиксировать до выбора конкретной печи и дымохода.
 - Этап 0 нужно перерисовать заново:
   - пустой чердак после уборки;
   - оставить реальный люк/проем в полу с поднятой крышкой;
