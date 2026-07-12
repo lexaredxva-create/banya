@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L6 3 L0 6 z" fill="#263238"/>
+    </marker>
+    <marker id="load" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L7 3.5 L0 7 z" fill="#b3261e"/>
+    </marker>
+    <pattern id="woodHatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="5" fill="#c58a46"/>
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#8a551f" stroke-width="0.35"/>
+    </pattern>
+    <pattern id="sheetHatch" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#e0b66e"/>
+      <circle cx="1" cy="1" r="0.3" fill="#9a692c"/>
+      <circle cx="3" cy="2.5" r="0.3" fill="#9a692c"/>
+    </pattern>
+    <style>
+      text { font-family: "DejaVu Sans", Arial, sans-serif; fill: #172026; letter-spacing: 0; }
+      .title { font-size: 8px; font-weight: 700; }
+      .subtitle { font-size: 3.55px; }
+      .h2 { font-size: 4.8px; font-weight: 700; }
+      .h3 { font-size: 3.7px; font-weight: 700; }
+      .body { font-size: 3px; }
+      .small { font-size: 2.65px; }
+      .tiny { font-size: 2.2px; }
+      .heavy { stroke: #172026; stroke-width: 0.8; fill: none; }
+      .medium { stroke: #263238; stroke-width: 0.45; fill: none; }
+      .thin { stroke: #455a64; stroke-width: 0.25; fill: none; }
+      .dim { stroke: #263238; stroke-width: 0.25; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .loadline { stroke: #b3261e; stroke-width: 0.6; fill: none; marker-end: url(#load); }
+      .beam { fill: url(#woodHatch); stroke: #6c431d; stroke-width: 0.45; }
+      .block { fill: #b87435; stroke: #6c431d; stroke-width: 0.4; }
+      .support { fill: #fff1c9; stroke: #9a6b00; stroke-width: 0.5; stroke-dasharray: 3 1.5; }
+      .stove { fill: #40474b; stroke: #172026; stroke-width: 0.55; }
+      .fire { fill: #f8d9d4; fill-opacity: 0.72; stroke: #b3261e; stroke-width: 0.45; stroke-dasharray: 2 1.2; }
+      .note { fill: #eef5e9; stroke: #4f722a; stroke-width: 0.35; }
+      .warn { fill: #fff0ec; stroke: #b3261e; stroke-width: 0.45; }
+      .unknown { fill: #e9f5f7; stroke: #007f8f; stroke-width: 0.35; }
+    </style>
+  </defs>
+
+  <rect x="5" y="5" width="410" height="287" fill="#fbfaf6" stroke="#172026" stroke-width="0.8"/>
+  <text x="12" y="18" class="title">КР-02-01. Печь на деревянном перекрытии: зона усиления и путь нагрузки · v01</text>
+  <text x="12" y="26" class="subtitle">Что находится под мокрым полом. Локальная обвязка распределяет нагрузку, но не отменяет проверку балок 100×200 на пролете 5400.</text>
+  <rect x="312" y="11" width="94" height="18" class="warn"/>
+  <text x="316" y="18" class="h3" fill="#8b1d18">НЕ РАСЧЁТ УСИЛЕНИЯ</text>
+  <text x="316" y="24" class="small">Сечения и крепеж назначает конструктор</text>
+
+  <text x="15" y="39" class="h2">1. План под полом: геометрический резерв 2100 × 1700, условно М 1:15</text>
+  <rect x="15" y="43" width="190" height="184" fill="#fff" stroke="#455a64" stroke-width="0.35"/>
+
+  <!-- Local underfloor plan -->
+  <rect x="25" y="55" width="140" height="113.3" class="support"/>
+  <rect x="21.7" y="55" width="6.7" height="113.3" class="beam"/>
+  <rect x="68.3" y="55" width="6.7" height="113.3" class="beam"/>
+  <rect x="115" y="55" width="6.7" height="113.3" class="beam"/>
+  <rect x="161.7" y="55" width="6.7" height="113.3" class="beam"/>
+
+  <!-- Full-depth blocking bands, final size/connection unknown -->
+  <rect x="28.4" y="56.5" width="39.9" height="6.7" class="block"/>
+  <rect x="75" y="56.5" width="40" height="6.7" class="block"/>
+  <rect x="121.7" y="56.5" width="40" height="6.7" class="block"/>
+  <rect x="28.4" y="106.5" width="39.9" height="6.7" class="block"/>
+  <rect x="75" y="106.5" width="40" height="6.7" class="block"/>
+  <rect x="121.7" y="106.5" width="40" height="6.7" class="block"/>
+  <rect x="28.4" y="160.1" width="39.9" height="6.7" class="block"/>
+  <rect x="75" y="160.1" width="40" height="6.7" class="block"/>
+  <rect x="121.7" y="160.1" width="40" height="6.7" class="block"/>
+
+  <text x="32" y="61" class="tiny" fill="#fff">R1*</text>
+  <text x="78" y="111" class="tiny" fill="#fff">R2*</text>
+  <text x="125" y="165" class="tiny" fill="#fff">R3*</text>
+
+  <!-- Above-floor zones projected onto framing -->
+  <rect x="58.3" y="98.3" width="53.4" height="46.7" fill="#e5e9eb" fill-opacity="0.72" stroke="#667078" stroke-width="0.45"/>
+  <rect x="65" y="105" width="40" height="33.3" class="stove"/>
+  <rect x="105" y="101.7" width="46.7" height="40" class="fire"/>
+  <text x="73" y="121" class="h3" fill="#fff">ПЕЧЬ*</text>
+  <text x="62" y="94" class="small">заводское основание*</text>
+  <text x="112" y="126" class="small" fill="#8b1d18">предтопочная</text>
+  <text x="117" y="131" class="small" fill="#8b1d18">защита*</text>
+
+  <!-- Load sharing arrows -->
+  <path d="M84 139 C73 149 57 151 31 151" class="loadline"/>
+  <path d="M84 139 C82 149 78 151 76 151" class="loadline"/>
+  <path d="M88 139 C96 149 106 151 114 151" class="loadline"/>
+  <path d="M92 139 C116 148 143 151 160 151" class="loadline"/>
+  <text x="35" y="146" class="tiny" fill="#8b1d18">путь нагрузки только после расчета соединений</text>
+
+  <!-- Drain reserved outside fire/support area -->
+  <rect x="183" y="104" width="5" height="42" fill="#c6e8ee" stroke="#14758a" stroke-width="0.45"/>
+  <text x="177" y="99" class="tiny" fill="#0e6070">DR-1*</text>
+  <text x="176" y="151" class="tiny" fill="#0e6070">трап/канал</text>
+  <line x1="188" y1="125" x2="201" y2="125" stroke="#14758a" stroke-width="0.6" stroke-dasharray="2 1"/>
+  <text x="174" y="157" class="tiny">труба 50 между балками</text>
+
+  <!-- Dimensions and labels -->
+  <line x1="25" y1="178" x2="165" y2="178" class="dim"/>
+  <line x1="25" y1="169" x2="25" y2="176.5" class="thin"/>
+  <line x1="165" y1="169" x2="165" y2="176.5" class="thin"/>
+  <text x="87" y="176.5" class="small">2100</text>
+  <line x1="18" y1="55" x2="18" y2="168.3" class="dim"/>
+  <text x="15.5" y="119" class="small" transform="rotate(-90 15.5 119)">1700</text>
+
+  <text x="23" y="187" class="h3">Б-01</text>
+  <text x="69" y="187" class="h3">Б-02</text>
+  <text x="116" y="187" class="h3">Б-03</text>
+  <text x="162" y="187" class="h3">Б-04</text>
+  <text x="23" y="194" class="body">100×200</text>
+  <text x="69" y="194" class="body">шаг 700</text>
+  <text x="116" y="194" class="body">прогал 600</text>
+  <text x="162" y="194" class="body">пролет 5400</text>
+
+  <rect x="22" y="199" width="176" height="23" class="warn"/>
+  <text x="27" y="208" class="h3" fill="#8b1d18">Важно</text>
+  <text x="27" y="214" class="body">Печь под коньком находится примерно в середине пролета балок 5400, а не возле их опор.</text>
+  <text x="27" y="220" class="body">R1…R3 и крепеж условны. Перемычки не уменьшают пролет и не заменяют расчет прогиба.</text>
+
+  <!-- Section through four joists -->
+  <text x="214" y="39" class="h2">2. Разрез А–А: нагрузка проходит через все слои</text>
+  <rect x="214" y="43" width="192" height="101" fill="#fff" stroke="#455a64" stroke-width="0.35"/>
+
+  <rect x="224" y="106" width="8" height="31" class="beam"/>
+  <rect x="267" y="106" width="8" height="31" class="beam"/>
+  <rect x="310" y="106" width="8" height="31" class="beam"/>
+  <rect x="353" y="106" width="8" height="31" class="beam"/>
+  <rect x="232" y="110" width="35" height="24" class="block"/>
+  <rect x="275" y="110" width="35" height="24" class="block"/>
+  <rect x="318" y="110" width="35" height="24" class="block"/>
+  <rect x="220" y="100" width="145" height="6" fill="url(#sheetHatch)" stroke="#8c5b2b" stroke-width="0.35"/>
+  <rect x="220" y="95" width="145" height="5" fill="url(#sheetHatch)" stroke="#8c5b2b" stroke-width="0.35"/>
+  <rect x="220" y="91" width="145" height="4" fill="#d9d2bd" stroke="#736a58" stroke-width="0.3"/>
+  <line x1="220" y1="89" x2="365" y2="86" stroke="#14758a" stroke-width="1.1"/>
+  <rect x="264" y="80" width="58" height="5" fill="#cfd5d9" stroke="#667078" stroke-width="0.35"/>
+  <rect x="272" y="57" width="42" height="23" class="stove"/>
+  <text x="284" y="70" class="h3" fill="#fff">ПЕЧЬ*</text>
+
+  <line x1="282" y1="52" x2="282" y2="104" class="loadline"/>
+  <line x1="293" y1="52" x2="293" y2="104" class="loadline"/>
+  <line x1="304" y1="52" x2="304" y2="104" class="loadline"/>
+  <path d="M293 105 C280 115 247 120 231 128" class="loadline"/>
+  <path d="M293 105 C287 116 279 120 274 128" class="loadline"/>
+  <path d="M293 105 C301 116 307 120 317 128" class="loadline"/>
+  <path d="M293 105 C319 115 342 120 360 128" class="loadline"/>
+
+  <text x="369" y="62" class="tiny">печь + камни + основание</text>
+  <text x="369" y="70" class="tiny">пожарная защита*</text>
+  <text x="369" y="78" class="tiny" fill="#0e6070">плитка + мембрана</text>
+  <text x="369" y="86" class="tiny">легкий уклон*</text>
+  <text x="369" y="94" class="tiny">P2 / P1 силовой настил*</text>
+  <text x="369" y="102" class="tiny">распределитель R*</text>
+  <text x="369" y="110" class="tiny">балки Б-01…Б-04</text>
+  <text x="369" y="118" class="tiny">сухая контролируемая зона</text>
+  <text x="220" y="141" class="tiny" fill="#8b1d18">Красные стрелки показывают идею пути нагрузки, а не рассчитанные усилия.</text>
+
+  <!-- Three structural outcomes -->
+  <text x="214" y="153" class="h2">3. Что может назначить расчет</text>
+  <rect x="214" y="158" width="61" height="64" class="note"/>
+  <text x="218" y="166" class="h3">А. Балки проходят</text>
+  <line x1="222" y1="194" x2="267" y2="194" stroke="#6c431d" stroke-width="3"/>
+  <rect x="232" y="183" width="25" height="6" fill="url(#sheetHatch)" stroke="#8c5b2b" stroke-width="0.3"/>
+  <text x="218" y="204" class="small">Полноразмерные блоки</text>
+  <text x="218" y="210" class="small">+ расчетный настил.</text>
+  <text x="218" y="216" class="tiny">Крепеж по схеме конструктора.</text>
+
+  <rect x="279" y="158" width="61" height="64" fill="#fff8dc" stroke="#9a6b00" stroke-width="0.4"/>
+  <text x="283" y="166" class="h3">Б. Локально мало</text>
+  <line x1="287" y1="194" x2="332" y2="194" stroke="#6c431d" stroke-width="3"/>
+  <line x1="287" y1="199" x2="332" y2="199" stroke="#9a6b00" stroke-width="3"/>
+  <rect x="297" y="182" width="25" height="6" fill="url(#sheetHatch)" stroke="#8c5b2b" stroke-width="0.3"/>
+  <text x="283" y="207" class="small">Дублирование на полную</text>
+  <text x="283" y="213" class="small">длину с опиранием*</text>
+  <text x="283" y="219" class="tiny">или расчетная поперечина.</text>
+
+  <rect x="344" y="158" width="62" height="64" class="warn"/>
+  <text x="348" y="166" class="h3" fill="#8b1d18">В. Не проходит 5400</text>
+  <line x1="352" y1="195" x2="397" y2="195" stroke="#6c431d" stroke-width="3"/>
+  <line x1="374" y1="188" x2="374" y2="208" stroke="#b3261e" stroke-width="3"/>
+  <path d="M366 209 L374 202 L382 209 Z" fill="#b3261e"/>
+  <text x="348" y="215" class="small">Независимая балка/опора</text>
+  <text x="348" y="220" class="tiny">снизу. Перемычки не лечат пролет.</text>
+
+  <!-- Sequence -->
+  <text x="15" y="234" class="h2">4. Последовательность до мокрого пирога</text>
+  <g>
+    <rect x="15" y="238" width="61" height="29" class="unknown"/>
+    <text x="19" y="246" class="h3">1. Открыть</text>
+    <text x="19" y="253" class="small">Снять доски в зоне.</text>
+    <text x="19" y="259" class="small">Осмотреть балки снизу.</text>
+    <text x="19" y="264" class="tiny">Ничего не резать.</text>
+
+    <rect x="80" y="238" width="61" height="29" class="unknown"/>
+    <text x="84" y="246" class="h3">2. Рассчитать</text>
+    <text x="84" y="253" class="small">Масса печи с камнями.</text>
+    <text x="84" y="259" class="small">Прогиб и опирание.</text>
+    <text x="84" y="264" class="tiny">Выбрать вариант А/Б/В.</text>
+
+    <rect x="145" y="238" width="61" height="29" class="unknown"/>
+    <text x="149" y="246" class="h3">3. Инженерия</text>
+    <text x="149" y="253" class="small">Трап и труба 50</text>
+    <text x="149" y="259" class="small">между балками.</text>
+    <text x="149" y="264" class="tiny">Ревизия доступна снизу.</text>
+
+    <rect x="210" y="238" width="61" height="29" class="note"/>
+    <text x="214" y="246" class="h3">4. Усиление</text>
+    <text x="214" y="253" class="small">Собрать R/S строго</text>
+    <text x="214" y="259" class="small">по расчетной схеме.</text>
+    <text x="214" y="264" class="tiny">Проверить соединения.</text>
+
+    <rect x="275" y="238" width="61" height="29" class="note"/>
+    <text x="279" y="246" class="h3">5. Настил P1</text>
+    <text x="279" y="253" class="small">Ось прочности поперек</text>
+    <text x="279" y="259" class="small">балок, кромки оперты.</text>
+    <text x="279" y="264" class="tiny">Толщина по расчету.</text>
+
+    <rect x="340" y="238" width="66" height="29" class="note"/>
+    <text x="344" y="246" class="h3">6. Настил P2*</text>
+    <text x="344" y="253" class="small">Швы смещены, основание</text>
+    <text x="344" y="259" class="small">сухое и жесткое.</text>
+    <text x="344" y="264" class="tiny">Дальше начинается мокрый узел.</text>
+  </g>
+
+  <!-- Title block -->
+  <rect x="5" y="274" width="410" height="18" fill="#fff" stroke="#172026" stroke-width="0.5"/>
+  <line x1="105" y1="274" x2="105" y2="292" class="medium"/>
+  <line x1="276" y1="274" x2="276" y2="292" class="medium"/>
+  <line x1="358" y1="274" x2="358" y2="292" class="medium"/>
+  <text x="10" y="281" class="h3">Баня на чердаке мастерской</text>
+  <text x="10" y="288" class="small">Печь · несущий узел v01</text>
+  <text x="110" y="281" class="h3">Зона усиления, четыре балки и путь нагрузки</text>
+  <text x="110" y="288" class="small">Статус: детализированная концепция / требуется расчет конструктора</text>
+  <text x="281" y="281" class="small">Масштаб плана: условно 1:15 при A3</text>
+  <text x="281" y="288" class="small">Единицы: мм · Дата: 2026-07-12</text>
+  <text x="363" y="285" class="h2">КР-02-01 · v01</text>
+</svg>

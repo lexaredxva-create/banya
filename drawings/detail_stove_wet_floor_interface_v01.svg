@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L6 3 L0 6 z" fill="#263238"/>
+    </marker>
+    <marker id="water" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L7 3.5 L0 7 z" fill="#14758a"/>
+    </marker>
+    <marker id="air" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L7 3.5 L0 7 z" fill="#16866f"/>
+    </marker>
+    <pattern id="woodHatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5" height="5" fill="#c58a46"/>
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#8a551f" stroke-width="0.35"/>
+    </pattern>
+    <pattern id="sheetHatch" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#e0b66e"/>
+      <circle cx="1" cy="1" r="0.3" fill="#9a692c"/>
+      <circle cx="3" cy="2.5" r="0.3" fill="#9a692c"/>
+    </pattern>
+    <pattern id="slopeHatch" width="6" height="5" patternUnits="userSpaceOnUse">
+      <rect width="6" height="5" fill="#d9d2bd"/>
+      <path d="M0 4 L3 1 L6 4" fill="none" stroke="#817866" stroke-width="0.35"/>
+    </pattern>
+    <style>
+      text { font-family: "DejaVu Sans", Arial, sans-serif; fill: #172026; letter-spacing: 0; }
+      .title { font-size: 8px; font-weight: 700; }
+      .subtitle { font-size: 3.55px; }
+      .h2 { font-size: 4.8px; font-weight: 700; }
+      .h3 { font-size: 3.7px; font-weight: 700; }
+      .body { font-size: 3px; }
+      .small { font-size: 2.65px; }
+      .tiny { font-size: 2.2px; }
+      .medium { stroke: #263238; stroke-width: 0.45; fill: none; }
+      .thin { stroke: #455a64; stroke-width: 0.25; fill: none; }
+      .dim { stroke: #263238; stroke-width: 0.25; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .waterline { stroke: #14758a; stroke-width: 0.65; fill: none; marker-end: url(#water); }
+      .airline { stroke: #16866f; stroke-width: 0.7; fill: none; marker-end: url(#air); }
+      .beam { fill: url(#woodHatch); stroke: #6c431d; stroke-width: 0.45; }
+      .stove { fill: #40474b; stroke: #172026; stroke-width: 0.55; }
+      .note { fill: #eef5e9; stroke: #4f722a; stroke-width: 0.35; }
+      .warn { fill: #fff0ec; stroke: #b3261e; stroke-width: 0.45; }
+      .unknown { fill: #e9f5f7; stroke: #007f8f; stroke-width: 0.35; }
+    </style>
+  </defs>
+
+  <rect x="5" y="5" width="410" height="287" fill="#fbfaf6" stroke="#172026" stroke-width="0.8"/>
+  <text x="12" y="18" class="title">АР-02-01. Печь + мокрый пол: куда уходит вода и влажный воздух · v01</text>
+  <text x="12" y="26" class="subtitle">Вода идет только по гидроизоляции к трапу. Пар удаляется вентиляцией наружу. Пожарное основание ставится поверх готового плиточного пола.</text>
+  <rect x="312" y="11" width="94" height="18" class="warn"/>
+  <text x="316" y="18" class="h3" fill="#8b1d18">ВЫБРАТЬ ОДНУ СИСТЕМУ</text>
+  <text x="316" y="24" class="small">Трап, мембрана, ленты и клей совместимые</text>
+
+  <text x="15" y="39" class="h2">1. Совмещенный разрез парной: конструкция, вода и пожарная защита</text>
+  <rect x="15" y="43" width="247" height="142" fill="#fff" stroke="#455a64" stroke-width="0.35"/>
+
+  <!-- Existing gable/wall and sauna lining -->
+  <rect x="27" y="48" width="9" height="123" fill="#dfe3e6" stroke="#6d777d" stroke-width="0.4"/>
+  <path d="M27 48 L36 57 M27 61 L36 70 M27 74 L36 83 M27 87 L36 96 M27 100 L36 109 M27 113 L36 122 M27 126 L36 135 M27 139 L36 148 M27 152 L36 161" stroke="#9aa4aa" stroke-width="0.35"/>
+  <rect x="37" y="53" width="5" height="100" fill="#d4d7d9" stroke="#778087" stroke-width="0.35"/>
+  <rect x="43" y="53" width="6" height="89" fill="#c58a46" stroke="#6c431d" stroke-width="0.35"/>
+  <text x="20" y="94" class="tiny" transform="rotate(-90 20 94)">газобетонный торец 300</text>
+  <text x="40" y="83" class="tiny" transform="rotate(-90 40 83)">фольга</text>
+  <text x="47" y="83" class="tiny" transform="rotate(-90 47 83)">рейка/вагонка</text>
+
+  <!-- Joists and unknown ceiling below -->
+  <rect x="50" y="139" width="190" height="7" fill="url(#sheetHatch)" stroke="#8c5b2b" stroke-width="0.35"/>
+  <rect x="50" y="146" width="190" height="7" fill="url(#sheetHatch)" stroke="#8c5b2b" stroke-width="0.35"/>
+  <rect x="59" y="153" width="10" height="24" class="beam"/>
+  <rect x="111" y="153" width="10" height="24" class="beam"/>
+  <rect x="163" y="153" width="10" height="24" class="beam"/>
+  <rect x="215" y="153" width="10" height="24" class="beam"/>
+  <rect x="50" y="177" width="190" height="5" fill="#edf1f3" stroke="#7a8790" stroke-width="0.35" stroke-dasharray="2 1"/>
+  <text x="52" y="181" class="tiny">S0: состав потолка второго этажа неизвестен; проверить, нет ли второй паронепроницаемой пленки</text>
+
+  <!-- Rigid substrate and slope layer -->
+  <path d="M50 139 L50 126 L222 133 L222 139 Z" fill="url(#slopeHatch)" stroke="#736a58" stroke-width="0.4"/>
+  <path d="M50 126 L222 133" stroke="#14758a" stroke-width="1.4" fill="none"/>
+  <path d="M50 122 L222 129" stroke="#d8a85f" stroke-width="4" fill="none"/>
+  <text x="148" y="119" class="small">плитка / моющееся покрытие*</text>
+  <text x="129" y="132" class="tiny" fill="#0e6070">сплошная связанная гидроизоляция</text>
+  <text x="119" y="142" class="tiny">P2/P1: расчетный силовой настил, швы смещены</text>
+
+  <!-- Waterproofing upstand and foil transition -->
+  <path d="M50 126 L42 126 L42 88" stroke="#14758a" stroke-width="1.4" fill="none"/>
+  <rect x="39" y="84" width="7" height="8" fill="#c6e8ee" stroke="#14758a" stroke-width="0.35"/>
+  <text x="52" y="89" class="tiny" fill="#0e6070">герметичный переход фольга ↔ мембрана*</text>
+  <text x="52" y="95" class="tiny">совместимые лента/клей, не случайный скотч</text>
+  <line x1="43" y1="139" x2="49" y2="139" class="dim"/>
+  <text x="42" y="148" class="tiny">K*</text>
+  <text x="50" y="151" class="tiny">вагонка не стоит в воде</text>
+
+  <!-- Stove and protective bedding on finished floor -->
+  <path d="M70 123 L128 125 L128 116 L70 114 Z" fill="#cfd5d9" stroke="#667078" stroke-width="0.45"/>
+  <path d="M78 114 L120 115.5 L120 74 L78 74 Z" class="stove"/>
+  <text x="88" y="95" class="h3" fill="#fff">ПЕЧЬ*</text>
+  <text x="68" y="68" class="small">заводское основание поверх готового пола*</text>
+  <line x1="68" y1="70" x2="83" y2="77" class="thin"/>
+  <text x="67" y="109" class="tiny">горизонт основания по паспорту;</text>
+  <text x="67" y="113" class="tiny">общий уклон пола сохраняется вокруг</text>
+
+  <!-- Drain, trap, pipe and inspection -->
+  <rect x="218" y="124" width="9" height="10" fill="#c6e8ee" stroke="#14758a" stroke-width="0.45"/>
+  <path d="M222.5 134 L222.5 151 C222.5 158 234 158 234 151 L234 145" stroke="#14758a" stroke-width="2" fill="none"/>
+  <line x1="234" y1="145" x2="252" y2="145" stroke="#14758a" stroke-width="2"/>
+  <rect x="214" y="158" width="28" height="17" fill="#fff8dc" stroke="#9a6b00" stroke-width="0.4" stroke-dasharray="2 1"/>
+  <text x="216" y="165" class="tiny">ревизия снизу</text>
+  <text x="216" y="170" class="tiny">контроль/датчик протечки</text>
+  <text x="228" y="129" class="tiny" fill="#0e6070">DR-1*</text>
+  <text x="235" y="141" class="tiny" fill="#0e6070">труба 50 между балками, в теплом контуре</text>
+
+  <!-- Water and air paths -->
+  <path d="M134 112 C153 116 182 120 214 127" class="waterline"/>
+  <path d="M58 118 C105 121 164 125 214 130" class="waterline"/>
+  <text x="143" y="107" class="small" fill="#0e6070">жидкая вода → уклон 1,5–2% → трап</text>
+  <path d="M52 99 C63 92 68 88 76 87" class="airline"/>
+  <path d="M98 64 C139 49 197 50 239 67" class="airline"/>
+  <text x="132" y="52" class="small" fill="#126b59">влажный воздух → отдельная вытяжка наружу*</text>
+  <text x="136" y="57" class="tiny" fill="#126b59">положение отверстий зависит от естественной/механической схемы</text>
+
+  <!-- Key dimensions/notes -->
+  <line x1="50" y1="117" x2="222" y2="124" class="dim"/>
+  <text x="126" y="115" class="tiny">на 2100 мм: перепад примерно 32–42 мм</text>
+  <rect x="145" y="72" width="102" height="23" class="warn"/>
+  <text x="149" y="79" class="h3" fill="#8b1d18">Под печью нельзя оставлять мягкий слой</text>
+  <text x="149" y="85" class="small">Основание уклона проверяется на точечную нагрузку.</text>
+  <text x="149" y="91" class="small">Не прокалывать синюю мембрану крепежом.</text>
+
+  <!-- Moisture paths -->
+  <text x="270" y="39" class="h2">2. Два разных пути удаления влаги</text>
+  <rect x="270" y="43" width="65" height="76" class="unknown"/>
+  <text x="274" y="51" class="h3" fill="#0e6070">ЖИДКАЯ ВОДА</text>
+  <circle cx="278" cy="61" r="3" fill="#6dc5d3"/>
+  <path d="M278 66 C278 72 284 74 284 80" class="waterline"/>
+  <text x="289" y="63" class="small">брызги / уборка</text>
+  <text x="274" y="84" class="body">плитка не герметична</text>
+  <text x="274" y="91" class="body">мембрана держит воду</text>
+  <text x="274" y="98" class="body">уклон ведет к фланцу</text>
+  <text x="274" y="105" class="body">трап и труба 50 вниз</text>
+  <text x="274" y="113" class="tiny">Пролив до плитки обязателен.</text>
+
+  <rect x="340" y="43" width="66" height="76" class="note"/>
+  <text x="344" y="51" class="h3" fill="#126b59">ВЛАЖНЫЙ ВОЗДУХ</text>
+  <path d="M348 65 C363 55 382 55 398 65" class="airline"/>
+  <text x="344" y="80" class="body">приток по схеме печи</text>
+  <text x="344" y="87" class="body">вытяжка только наружу</text>
+  <text x="344" y="94" class="body">после бани — просушка</text>
+  <text x="344" y="101" class="body">дверью/вентилятором</text>
+  <text x="344" y="108" class="tiny">Канал через чердак герметичный, утепленный.</text>
+  <text x="344" y="114" class="tiny">Не в пол и не в холодный чердак.</text>
+
+  <!-- Drainage options -->
+  <text x="270" y="128" class="h2">3. Слив парной: выбрать до закрытия пола</text>
+  <rect x="270" y="133" width="65" height="55" class="note"/>
+  <text x="274" y="141" class="h3">А. Свой трап</text>
+  <rect x="276" y="151" width="45" height="15" fill="#fff1df" stroke="#b65a20" stroke-width="0.35"/>
+  <rect x="318" y="151" width="4" height="15" fill="#c6e8ee" stroke="#14758a" stroke-width="0.35"/>
+  <path d="M280 156 L315 160" class="waterline"/>
+  <text x="274" y="174" class="small">Канал у двери, вне печной</text>
+  <text x="274" y="180" class="small">зоны. Предпочтительно.</text>
+  <text x="274" y="185" class="tiny">Точное место между балками.</text>
+
+  <rect x="340" y="133" width="66" height="55" fill="#fff8dc" stroke="#9a6b00" stroke-width="0.4"/>
+  <text x="344" y="141" class="h3">Б. В помывочную</text>
+  <rect x="346" y="151" width="24" height="15" fill="#fff1df" stroke="#b65a20" stroke-width="0.35"/>
+  <rect x="370" y="151" width="24" height="15" fill="#e9f5f7" stroke="#14758a" stroke-width="0.35"/>
+  <line x1="370" y1="149" x2="370" y2="167" stroke="#455a64" stroke-width="0.5"/>
+  <path d="M350 157 L389 161" class="waterline"/>
+  <text x="344" y="174" class="small">Под дверью к DR-2 только</text>
+  <text x="344" y="180" class="small">при единой гидросистеме.</text>
+  <text x="344" y="185" class="tiny">Порог не должен запереть воду.</text>
+
+  <!-- Stove interface rules -->
+  <text x="270" y="198" class="h2">4. Печь ставится последней</text>
+  <rect x="270" y="203" width="136" height="64" class="warn"/>
+  <rect x="279" y="238" width="52" height="5" fill="#d8a85f" stroke="#8c5b2b" stroke-width="0.35"/>
+  <line x1="279" y1="246" x2="331" y2="246" stroke="#14758a" stroke-width="1.3"/>
+  <rect x="286" y="228" width="38" height="8" fill="#cfd5d9" stroke="#667078" stroke-width="0.35"/>
+  <rect x="294" y="207" width="22" height="21" class="stove"/>
+  <path d="M276 250 C286 254 320 254 334 249" class="waterline"/>
+  <text x="339" y="211" class="body">1. Пролив и приемка мембраны.</text>
+  <text x="339" y="219" class="body">2. Плитка и выдержка системы.</text>
+  <text x="339" y="227" class="body">3. Заводское основание сверху.</text>
+  <text x="339" y="235" class="body">4. Печь/экраны по паспорту.</text>
+  <text x="339" y="243" class="body">5. Вода обходит основание.</text>
+  <text x="339" y="251" class="body">6. Никаких саморезов в мембрану.</text>
+  <text x="339" y="259" class="tiny">Предтопочный лист ≥500×700, если паспорт не требует больше.</text>
+  <text x="339" y="264" class="tiny">После монтажа: тяга, вентиляция, CO и контроль температур.</text>
+
+  <!-- Assembly sequence -->
+  <text x="15" y="194" class="h2">5. Порядок сборки мокрого узла</text>
+  <g>
+    <rect x="15" y="198" width="46" height="31" class="unknown"/>
+    <text x="19" y="206" class="h3">1. Осмотр</text>
+    <text x="19" y="213" class="small">Балки, потолок</text>
+    <text x="19" y="219" class="small">снизу, влажность.</text>
+    <text x="19" y="225" class="tiny">Фиксируем S0.</text>
+
+    <rect x="64" y="198" width="46" height="31" class="unknown"/>
+    <text x="68" y="206" class="h3">2. Расчет</text>
+    <text x="68" y="213" class="small">Ростверк и масса</text>
+    <text x="68" y="219" class="small">печи с камнями.</text>
+    <text x="68" y="225" class="tiny">Схема крепежа.</text>
+
+    <rect x="113" y="198" width="46" height="31" class="unknown"/>
+    <text x="117" y="206" class="h3">3. Трап</text>
+    <text x="117" y="213" class="small">Труба 50 между</text>
+    <text x="117" y="219" class="small">балками, ревизия.</text>
+    <text x="117" y="225" class="tiny">Испытать соединения.</text>
+
+    <rect x="162" y="198" width="46" height="31" class="note"/>
+    <text x="166" y="206" class="h3">4. P1/P2</text>
+    <text x="166" y="213" class="small">Жесткий силовой</text>
+    <text x="166" y="219" class="small">настил по расчету.</text>
+    <text x="166" y="225" class="tiny">Сухое основание.</text>
+
+    <rect x="211" y="198" width="46" height="31" class="note"/>
+    <text x="215" y="206" class="h3">5. Уклон</text>
+    <text x="215" y="213" class="small">1,5–2% к DR-1</text>
+    <text x="215" y="219" class="small">или DR-2.</text>
+    <text x="215" y="225" class="tiny">Под печью жестко.</text>
+
+    <rect x="15" y="233" width="46" height="34" class="note"/>
+    <text x="19" y="241" class="h3">6. Мембрана</text>
+    <text x="19" y="248" class="small">Фланец, углы,</text>
+    <text x="19" y="254" class="small">манжеты, стены.</text>
+    <text x="19" y="261" class="tiny">Одна система.</text>
+
+    <rect x="64" y="233" width="46" height="34" class="note"/>
+    <text x="68" y="241" class="h3">7. Пролив</text>
+    <text x="68" y="248" class="small">До плитки закрыть</text>
+    <text x="68" y="254" class="small">трап и проверить.</text>
+    <text x="68" y="261" class="tiny">Осмотр снизу.</text>
+
+    <rect x="113" y="233" width="46" height="34" class="note"/>
+    <text x="117" y="241" class="h3">8. Плитка</text>
+    <text x="117" y="248" class="small">Клей/затирка по</text>
+    <text x="117" y="254" class="small">системе и режиму.</text>
+    <text x="117" y="261" class="tiny">Выдержать сроки.</text>
+
+    <rect x="162" y="233" width="46" height="34" fill="#fff8dc" stroke="#9a6b00" stroke-width="0.4"/>
+    <text x="166" y="241" class="h3">9. Основание</text>
+    <text x="166" y="248" class="small">Заводское, поверх</text>
+    <text x="166" y="254" class="small">готового пола.</text>
+    <text x="166" y="261" class="tiny">Без проколов.</text>
+
+    <rect x="211" y="233" width="46" height="34" class="warn"/>
+    <text x="215" y="241" class="h3">10. Печь</text>
+    <text x="215" y="248" class="small">Отступы, экраны,</text>
+    <text x="215" y="254" class="small">предтопочный лист.</text>
+    <text x="215" y="261" class="tiny">Только по паспорту.</text>
+  </g>
+
+  <!-- Title block -->
+  <rect x="5" y="274" width="410" height="18" fill="#fff" stroke="#172026" stroke-width="0.5"/>
+  <line x1="105" y1="274" x2="105" y2="292" class="medium"/>
+  <line x1="276" y1="274" x2="276" y2="292" class="medium"/>
+  <line x1="358" y1="274" x2="358" y2="292" class="medium"/>
+  <text x="10" y="281" class="h3">Баня на чердаке мастерской</text>
+  <text x="10" y="288" class="small">Печь + мокрый пол v01</text>
+  <text x="110" y="281" class="h3">Гидроизоляция, трап, вентиляция и пожарное основание</text>
+  <text x="110" y="288" class="small">Статус: детализированная концепция / система и оборудование не выбраны</text>
+  <text x="281" y="281" class="small">Схема без монтажного масштаба</text>
+  <text x="281" y="288" class="small">Единицы: мм · Дата: 2026-07-12</text>
+  <text x="363" y="285" class="h2">АР-02-01 · v01</text>
+</svg>

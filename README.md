@@ -41,8 +41,11 @@
 
 - `drawings/stage_00_measured_skeleton_v02.pdf` — активная ревизия листа А-00-01 для обмера; Б-17 отсутствует, люк между Б-16 и Б-18.
 - `drawings/bath_block_gable_concept_v01.pdf` — активная концепция банного торца: парная, помывочная, вычет слоев и предварительная зона печи.
+- `drawings/detail_stove_wet_floor_album_v01.pdf` — двухлистовый альбом: зона усиления под печью и совместный узел гидроизоляции, трапа, вентиляции и пожарного основания.
 - `planning/bath_block_concept_v01.md` — исходные размеры, допущения, параметры и ограничения концепции банного торца.
+- `planning/stove_wet_floor_assembly_v01.md` — подробная последовательность сборки печного и мокрого узла.
 - `planning/review_bath_block_concept_v01.md` — независимая проверка геометрии и рисков листа v01.
+- `planning/review_stove_wet_floor_v01.md` — независимая проверка пути нагрузки и удаления влаги.
 - `planning/measurements_stage_00.md` — ведомость замеров.
 - `planning/construction_sequence_v02.md` — порядок работ и предварительные пироги.
 - `planning/drawing_revision_register_v02.md` — что оставить, перерисовать и вывести из активного комплекта.
