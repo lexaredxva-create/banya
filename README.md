@@ -39,7 +39,7 @@
 
 ## Текущий активный пакет
 
-- `drawings/stage_00_measured_skeleton_v01.pdf` — лист А-00-01 для обмера.
+- `drawings/stage_00_measured_skeleton_v02.pdf` — активная ревизия листа А-00-01 для обмера; Б-17 отсутствует, люк между Б-16 и Б-18.
 - `planning/measurements_stage_00.md` — ведомость замеров.
 - `planning/construction_sequence_v02.md` — порядок работ и предварительные пироги.
 - `planning/drawing_revision_register_v02.md` — что оставить, перерисовать и вывести из активного комплекта.
