@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 6 3 L 0 6 z" fill="#263238"/>
+    </marker>
+    <pattern id="wallHatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="4" height="4" fill="#dfe3e6"/>
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#9aa4aa" stroke-width="0.35"/>
+    </pattern>
+    <style>
+      text { font-family: "DejaVu Sans", Arial, sans-serif; fill: #172026; letter-spacing: 0; }
+      .title { font-size: 8px; font-weight: 700; }
+      .subtitle { font-size: 3.7px; }
+      .h2 { font-size: 5px; font-weight: 700; }
+      .h3 { font-size: 3.9px; font-weight: 700; }
+      .body { font-size: 3.25px; }
+      .small { font-size: 2.8px; }
+      .tiny { font-size: 2.35px; }
+      .heavy { stroke: #172026; stroke-width: 0.8; fill: none; }
+      .medium { stroke: #263238; stroke-width: 0.45; fill: none; }
+      .thin { stroke: #455a64; stroke-width: 0.25; fill: none; }
+      .dash { stroke: #007f8f; stroke-width: 0.45; stroke-dasharray: 2.2 1.4; fill: none; }
+      .dim { stroke: #263238; stroke-width: 0.25; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .wood { fill: #c58a46; stroke: #6c431d; stroke-width: 0.25; }
+      .note { fill: #eef5e9; stroke: #4f722a; stroke-width: 0.35; }
+      .warn { fill: #fff0ec; stroke: #b3261e; stroke-width: 0.45; }
+      .unknown { fill: #e9f5f7; stroke: #007f8f; stroke-width: 0.35; }
+    </style>
+  </defs>
+
+  <rect x="5" y="5" width="410" height="287" fill="#fbfaf6" stroke="#172026" stroke-width="0.8"/>
+
+  <text x="12" y="18" class="title">А-00-01. Обмерный каркас чердака</text>
+  <text x="12" y="26" class="subtitle">План балок и поперечный разрез. Известные размеры отделены от параметров, которые нужно замерить.</text>
+  <rect x="318" y="11" width="88" height="18" class="warn"/>
+  <text x="322" y="18" class="h3" fill="#8b1d18">СТАТУС: ДЛЯ ОБМЕРА</text>
+  <text x="322" y="24" class="small">Не для разметки, закупки и строительства</text>
+
+  <text x="15" y="39" class="h2">1. План существующего перекрытия, М 1:50</text>
+  <text x="15" y="44" class="small">X = 0 — торец будущей парной. Верх плана — левый скат при взгляде от входа к парной.</text>
+
+  <!-- Overall plan: 12 000 x 6000 at 1:50 -->
+  <rect x="15" y="48" width="240" height="120" fill="#fff" stroke="#172026" stroke-width="0.8"/>
+  <rect x="15" y="48" width="240" height="6" fill="url(#wallHatch)" stroke="#455a64" stroke-width="0.25"/>
+  <rect x="15" y="162" width="240" height="6" fill="url(#wallHatch)" stroke="#455a64" stroke-width="0.25"/>
+
+  <!-- 18 beams: 100 wide, 600 clear, 700 step -->
+  <g aria-label="Балки Б-01...Б-18">
+    <rect x="15"  y="48" width="2" height="120" class="wood"/>
+    <rect x="29"  y="48" width="2" height="120" class="wood"/>
+    <rect x="43"  y="48" width="2" height="120" class="wood"/>
+    <rect x="57"  y="48" width="2" height="120" class="wood"/>
+    <rect x="71"  y="48" width="2" height="120" class="wood"/>
+    <rect x="85"  y="48" width="2" height="120" class="wood"/>
+    <rect x="99"  y="48" width="2" height="120" class="wood"/>
+    <rect x="113" y="48" width="2" height="120" class="wood"/>
+    <rect x="127" y="48" width="2" height="120" class="wood"/>
+    <rect x="141" y="48" width="2" height="120" class="wood"/>
+    <rect x="155" y="48" width="2" height="120" class="wood"/>
+    <rect x="169" y="48" width="2" height="120" class="wood"/>
+    <rect x="183" y="48" width="2" height="120" class="wood"/>
+    <rect x="197" y="48" width="2" height="120" class="wood"/>
+    <rect x="211" y="48" width="2" height="120" class="wood"/>
+    <rect x="225" y="48" width="2" height="120" class="wood"/>
+    <rect x="239" y="48" width="2" height="120" class="wood"/>
+    <rect x="253" y="48" width="2" height="120" class="wood"/>
+  </g>
+
+  <text x="16" y="59" class="tiny" transform="rotate(90 16 59)">Б-01</text>
+  <text x="254" y="59" class="tiny" transform="rotate(90 254 59)">Б-18*</text>
+  <text x="23" y="111" class="small">600 прогал</text>
+  <line x1="17.3" y1="106" x2="28.7" y2="106" class="dim"/>
+  <text x="15.2" y="102" class="tiny">100</text>
+  <line x1="15.2" y1="98" x2="16.8" y2="98" class="dim"/>
+  <text x="48" y="158" class="small">Балки идут поперек здания и перекрывают пролет 5400</text>
+
+  <!-- Orientation and provisional equipment -->
+  <rect x="15" y="48" width="8" height="120" fill="#d9574f" opacity="0.18"/>
+  <text x="19" y="85" class="small" transform="rotate(-90 19 85)">ТОРЕЦ ПАРНОЙ / X=0</text>
+  <rect x="247" y="48" width="8" height="120" fill="#3c78a8" opacity="0.16"/>
+  <text x="251" y="128" class="small" transform="rotate(-90 251 128)">ВХОД / ЛЮК / КОНДИЦИОНЕРЫ</text>
+
+  <rect x="205" y="60" width="18" height="10" rx="0.8" class="unknown"/>
+  <rect x="226" y="60" width="18" height="10" rx="0.8" class="unknown"/>
+  <text x="207" y="66" class="tiny">AC-1?</text>
+  <text x="228" y="66" class="tiny">AC-2?</text>
+  <text x="203" y="76" class="tiny">точные X, Y, габариты и сервисные зоны — замерить</text>
+
+  <rect x="211" y="132" width="30" height="18" class="dash"/>
+  <line x1="211" y1="132" x2="241" y2="150" class="dash"/>
+  <text x="211" y="128" class="tiny">ЛЮК: Lh × Wh; Xh, Yh — замерить</text>
+  <text x="213" y="155" class="tiny">длинная сторона вдоль X</text>
+
+  <!-- Plan dimensions -->
+  <line x1="15" y1="35" x2="255" y2="35" class="dim"/>
+  <line x1="15" y1="37" x2="15" y2="47" class="thin"/>
+  <line x1="255" y1="37" x2="255" y2="47" class="thin"/>
+  <text x="130" y="33" class="small">12 000</text>
+
+  <line x1="11" y1="48" x2="11" y2="168" class="dim"/>
+  <line x1="12" y1="48" x2="14" y2="48" class="thin"/>
+  <line x1="12" y1="168" x2="14" y2="168" class="thin"/>
+  <text x="8.3" y="113" class="small" transform="rotate(-90 8.3 113)">6000 общая ширина</text>
+
+  <line x1="261" y1="54" x2="261" y2="162" class="dim"/>
+  <line x1="255" y1="54" x2="259" y2="54" class="thin"/>
+  <line x1="255" y1="162" x2="259" y2="162" class="thin"/>
+  <text x="264" y="114" class="small" transform="rotate(-90 264 114)">5400 расчетный пролет</text>
+
+  <text x="15" y="180" class="small">* 18 балок получаются только при строго равных прогалах 600 по всей длине. Это проверяемый вывод, а не обмер.</text>
+
+  <!-- Notes column -->
+  <rect x="272" y="39" width="134" height="46" class="note"/>
+  <text x="277" y="47" class="h2">Зафиксировано</text>
+  <text x="277" y="54" class="body">• длина ≈ 12 000; ширина ≈ 6000;</text>
+  <text x="277" y="60" class="body">• стены по 300; пролет 5400;</text>
+  <text x="277" y="66" class="body">• балки осина 100 × 200 на ребре;</text>
+  <text x="277" y="72" class="body">• чистый прогал 600; типовой шаг 700;</text>
+  <text x="277" y="78" class="body">• первая балка у торцевой стены.</text>
+
+  <rect x="272" y="90" width="134" height="72" class="unknown"/>
+  <text x="277" y="98" class="h2">Замерить и вписать</text>
+  <text x="277" y="106" class="body">1. N — фактическое число балок.</text>
+  <text x="277" y="113" class="body">2. S1…Sn — каждый прогал, не один выборочный.</text>
+  <text x="277" y="120" class="body">3. Lh × Wh, Xh, Yh — люк и его обрамление снизу.</text>
+  <text x="277" y="127" class="body">4. AC-1/2: модели, габариты, X/Y, проходы воздуха.</text>
+  <text x="277" y="134" class="body">5. BR-1… — все затяжки, раскосы и продольные связи.</text>
+  <text x="277" y="141" class="body">6. Опирание балок, трещины, прогиб и влажность.</text>
+  <text x="277" y="148" class="body">7. Реальные 6000/3000 в нескольких сечениях.</text>
+  <text x="277" y="156" class="small">Положение пунктирных объектов на плане условное.</text>
+
+  <rect x="272" y="168" width="134" height="42" class="warn"/>
+  <text x="277" y="176" class="h2" fill="#8b1d18">До закрытия листа 00 нельзя</text>
+  <text x="277" y="184" class="body">• снимать раскосы/затяжки и резать балки;</text>
+  <text x="277" y="191" class="body">• считать перемычки усилением пролета;</text>
+  <text x="277" y="198" class="body">• покупать настил, утеплитель, трап, печь;</text>
+  <text x="277" y="205" class="body">• привязывать слив и дымоход по этому листу.</text>
+
+  <!-- Cross-section -->
+  <text x="15" y="198" class="h2">2. Поперечный разрез существующего чердака, М 1:50</text>
+  <line x1="20" y1="266" x2="140" y2="266" class="heavy"/>
+  <path d="M20 266 L80 206 L140 266" class="heavy"/>
+  <line x1="80" y1="202" x2="80" y2="269" class="thin" stroke-dasharray="2 1"/>
+  <rect x="20" y="260" width="6" height="6" fill="url(#wallHatch)" stroke="#455a64" stroke-width="0.25"/>
+  <rect x="134" y="260" width="6" height="6" fill="url(#wallHatch)" stroke="#455a64" stroke-width="0.25"/>
+  <line x1="26" y1="263" x2="134" y2="263" stroke="#c58a46" stroke-width="2"/>
+  <path d="M24 262 L80 206 L136 262" stroke="#c58a46" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M43 243 L80 206 L117 243" class="dash"/>
+  <text x="48" y="239" class="tiny">будущий теплый блок здесь не назначен</text>
+  <text x="31" y="215" class="small">холодная кровля без утепления</text>
+  <text x="45" y="258" class="small">балка 100 × 200, пролет 5400</text>
+  <text x="83" y="211" class="tiny">90°</text>
+
+  <line x1="20" y1="272.5" x2="140" y2="272.5" class="dim"/>
+  <text x="76" y="271.5" class="small">6000</text>
+  <line x1="26" y1="269" x2="134" y2="269" class="dim"/>
+  <text x="75" y="268.2" class="tiny">5400</text>
+  <line x1="14" y1="266" x2="14" y2="206" class="dim"/>
+  <text x="11" y="240" class="small" transform="rotate(-90 11 240)">≈3000</text>
+
+  <rect x="150" y="218" width="105" height="49" fill="#fff" stroke="#455a64" stroke-width="0.35"/>
+  <text x="155" y="226" class="h3">Что проверяет этот разрез</text>
+  <text x="155" y="234" class="body">• 6000 = 300 + 5400 + 300;</text>
+  <text x="155" y="241" class="body">• при высоте 3000 скаты получаются 45°;</text>
+  <text x="155" y="248" class="body">• угол в коньке получается 90°;</text>
+  <text x="155" y="255" class="body">• слои теплого блока вычтем на листе АР-01;</text>
+  <text x="155" y="262" class="body">• текущие связи кровли сначала обмеряем.</text>
+
+  <rect x="272" y="216" width="134" height="51" fill="#fff" stroke="#455a64" stroke-width="0.35"/>
+  <text x="277" y="224" class="h3">Система координат для следующих листов</text>
+  <text x="277" y="232" class="body">X: от торца парной к входу, 0…12 000.</text>
+  <text x="277" y="239" class="body">Y: от левого ската к правому при взгляде</text>
+  <text x="277" y="245" class="body">от входа в сторону парной, 0…6000.</text>
+  <text x="277" y="252" class="body">Z: от существующего пола вверх.</text>
+  <text x="277" y="260" class="small">Все новые фото и замеры подписывать X/Y/Z.</text>
+
+  <!-- Title block -->
+  <rect x="5" y="274" width="410" height="18" fill="#fff" stroke="#172026" stroke-width="0.5"/>
+  <line x1="100" y1="274" x2="100" y2="292" class="medium"/>
+  <line x1="270" y1="274" x2="270" y2="292" class="medium"/>
+  <line x1="355" y1="274" x2="355" y2="292" class="medium"/>
+  <text x="10" y="281" class="h3">Баня на чердаке мастерской</text>
+  <text x="10" y="288" class="small">Обмерная база v01</text>
+  <text x="105" y="281" class="h3">План балок и поперечный разрез</text>
+  <text x="105" y="288" class="small">Статус: для обмера / требуется проверка конструктора</text>
+  <text x="275" y="281" class="small">Масштаб: 1:50 при печати A3</text>
+  <text x="275" y="288" class="small">Единицы: мм · Дата: 2026-07-11</text>
+  <text x="360" y="285" class="h2">Лист А-00-01</text>
+</svg>
